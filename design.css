@@ -1,0 +1,141 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(156, 151, 151);
+}
+
+.center {
+  padding: 30px;
+  border-radius: 5px;  
+  width: 35%;
+  display: flex;
+  align-content: center;
+  background-color: white;
+
+  /*BOX SHADOW*/
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(153, 152, 152, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(136, 135, 135, 0.75);
+  box-shadow: 5px 5px 5px 0px rgba(129, 129, 129, 0.75);
+}
+
+.date-content {
+  width: 100%;
+}
+
+.fecha {
+  display: grid;
+  grid-template-areas:
+    'day-number month month month month month day-name day-name day-name'
+    'day-number year year year year year day-name day-name day-name';
+    grid-template-columns: min-content max-content; 
+  grid-auto-flow: column;  
+  background-color: white;
+  margin-bottom: 20px;
+  font-family: cursive;
+}
+
+.item1 { 
+  
+	grid-area: day-number;
+  text-align: start;
+  margin-right: 5px;
+  align-content: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.item2 { 
+  grid-area: month;
+  text-align: left;
+  align-content: start;
+  font-weight: bold;
+}
+.item3 { 
+  grid-area: year; 
+  text-align: left; 
+  align-content: start;
+}
+.item4 { 
+  grid-area: day-name; 
+  text-align: end; 
+  align-content: center; 
+  font-weight: bold;
+}
+
+.table {
+  grid-template-areas: "tarea";
+  grid-column-end: auto;
+  border-radius: 5px;  
+  display: grid;
+  align-content: center;
+}
+
+.tasks>tr {
+  background-color: lightgreen;
+  border-radius: 5px;
+  padding-left: 3px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin: 4px 0px;
+  width: 100%;
+  display: inline-block;
+}
+
+.boton {
+  border-radius: 50%;
+  background-color: rgb(228, 228, 216);
+  margin-left: 5px ;
+  padding: 5px 8px;
+  font-weight: bolder;
+  border: none;
+  
+  
+}
+
+#inputField {
+  border-radius: 3%;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border: none;
+  /* border-color: silver; */
+  background-color: beige;
+  font-family: cursive;
+}
+
+.delete {
+  font-family: cursive;
+  border: none;
+  border-radius: 4px;
+  background-color: lightcoral;
+  display: flex;
+  padding: 5px;
+  align-self: end;
+}
+
+.check-btn {
+  font-family: cursive;
+  border: none;
+  border-radius: 4px;
+  background-color: lightseagreen;
+  display: flex;
+  padding: 5px;
+  align-self: end;
+}
+
+.newCell {
+  font-family: cursive;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 5px;
+}
+
+.w-full {
+  width: 100%;
+}

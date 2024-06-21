@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./design.css" />
+  <link rel="stylesheet" href="./icons.css" />
+  <title>Note</title>
+</head>
+
+<body>
+  <div class="center">
+    <form class="w-full">
+      <div class="date-content">
+        <div class="fecha">
+          <div id="dayNumber" class="item1"></div>
+          <div id="month" class="item2"></div>
+          <div id="year" class="item3"></div>
+          <div id="day" class="item4"></div>
+        </div>
+      </div>
+
+      <div>
+        <label for="inputField"></label>
+        <input placeholder="Nueva Tarea" id="inputField" type="text" />
+        <button id="addButton" class="boton">+</button>
+      </div>
+
+
+      <table id="dataTable" class="table">
+        <thead>
+          <tr>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="tasks">
+          <!-- Las filas se agregarán aquí -->
+        </tbody>
+      </table>
+    </form>
+  </div>
+
+</body>
+<script src="./note.js"></script>
+
+</html>
